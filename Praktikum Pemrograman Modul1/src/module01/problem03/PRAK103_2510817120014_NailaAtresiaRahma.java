@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class PRAK103_2510817120014_NailaAtresiaRahma {
     public static void main(String[] args) {
-        int i = 1, totalBaris, input;
+        int i = 1, totalRows, input;
         Scanner keyboard = new Scanner(System.in);
 
-        totalBaris = keyboard.nextInt();
+        totalRows = keyboard.nextInt();
         input = keyboard.nextInt();
 
         do {
             if (input % 2 != 0) {
-                if (i == totalBaris) {
+                if (i == totalRows) {
                     System.out.print(input);
                 } else {
                     System.out.print(input + ", ");
@@ -20,7 +20,7 @@ public class PRAK103_2510817120014_NailaAtresiaRahma {
                 i++;
             }
             input++;
-        } while (i <= totalBaris);
+        } while (i <= totalRows);
 
         keyboard.close();
     }
