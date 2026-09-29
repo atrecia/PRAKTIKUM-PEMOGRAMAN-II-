@@ -16,26 +16,27 @@ public class PRAK104_2510817120014_NailaAtresiaRahma {
         String bagas2 = keyboard.next();
         String bagas3 = keyboard.next();
 
-        int poinAbu = 0;
-        int poinBagas = 0;
+        int abuScore = 0;
+        int bagasScore = 0;
 
         if (abu1.equals(bagas1)) {
 
         } else if ((abu1.equals("B") && bagas1.equals("G")) ||
                 (abu1.equals("G") && bagas1.equals("K")) ||
                 (abu1.equals("K") && bagas1.equals("B"))) {
-            poinAbu++;
+            abuScore++;
         } else {
-            poinBagas++;
+            bagasScore++;
         }
 
         if (abu2.equals(bagas2)) {
+
         } else if ((abu2.equals("B") && bagas2.equals("G")) ||
                 (abu2.equals("G") && bagas2.equals("K")) ||
                 (abu2.equals("K") && bagas2.equals("B"))) {
-            poinAbu++;
+            abuScore++;
         } else {
-            poinBagas++;
+            bagasScore++;
         }
 
         if (abu3.equals(bagas3)) {
@@ -43,14 +44,14 @@ public class PRAK104_2510817120014_NailaAtresiaRahma {
         } else if ((abu3.equals("B") && bagas3.equals("G")) ||
                 (abu3.equals("G") && bagas3.equals("K")) ||
                 (abu3.equals("K") && bagas3.equals("B"))) {
-            poinAbu++;
+            abuScore++;
         } else {
-            poinBagas++;
+            bagasScore++;
         }
 
-        if (poinAbu > poinBagas) {
+        if (abuScore > bagasScore) {
             System.out.println("Abu");
-        } else if (poinBagas > poinAbu) {
+        } else if (bagasScore > abuScore) {
             System.out.println("Bagas");
         } else {
             System.out.println("Seri");
